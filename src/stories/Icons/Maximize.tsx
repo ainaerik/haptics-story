@@ -1,0 +1,31 @@
+const Maximize = () => (
+  <svg
+    id="maximize"
+    xmlns="http://www.w3.org/2000/svg"
+    width="48"
+    height="32"
+    viewBox="0 0 48 32"
+  >
+    <rect
+      id="Rectangle_234"
+      data-name="Rectangle 234"
+      width="48"
+      height="32"
+      fill="#111"
+      opacity="0"
+    />
+    <g
+      id="Rectangle_236"
+      data-name="Rectangle 236"
+      transform="translate(18 10)"
+      fill="rgba(255,255,255,0)"
+      stroke="#999"
+      stroke-width="1"
+    >
+      <rect width="12" height="12" stroke="none" />
+      <rect x="0.5" y="0.5" width="11" height="11" fill="none" />
+    </g>
+  </svg>
+);
+
+export default Maximize;
