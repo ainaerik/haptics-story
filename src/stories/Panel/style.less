@@ -1,0 +1,42 @@
+.panel {
+  border-radius: 16px;
+  border: 1px solid #707070;
+  position: relative;
+  // min-height: calc(100vh - 108px);
+
+  & > .panel-header {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: inherit;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 10px;
+  }
+
+  & > .panel-footer {
+    // position: absolute;
+    // bottom: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: inherit;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 10px;
+
+    & > .ant-divider-horizontal {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  & > .panel-container {
+    margin: 0 10px;
+    height: auto;
+    overflow: auto;
+  }
+}

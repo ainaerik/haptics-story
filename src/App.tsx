@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Properties from "./stories/Properties";
+import { getMockPanelContent } from "./stories/assets/mock";
 
-function App() {
+const App = () => {
+  const panelContents = getMockPanelContent();
+
+  const handleSave = async () => {
+    console.log("Save");
+  };
+
+  const handleClose = () => {
+    console.log("Close");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Properties
+        panelContents={panelContents}
+        handleSave={handleSave}
+        handleClose={handleClose}
+      />
     </div>
   );
-}
+};
 
 export default App;
