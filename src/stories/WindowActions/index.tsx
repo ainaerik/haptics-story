@@ -28,13 +28,11 @@ const WindowActions: FC<WindowActionsProps> = ({
         <Minimize />
       </span>
     )}
-
     {!hideMaximize && (
       <span className="btn-action" onClick={handleMaximize}>
         <Maximize />
       </span>
     )}
-
     {!hideClose && (
       <span className="btn-action" onClick={handleClose}>
         <Close />

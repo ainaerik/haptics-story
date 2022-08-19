@@ -47,6 +47,7 @@ const SliderInput: FC<SliderInputProps> = ({
         />
       </div>
       <Slider
+        className="slider"
         min={min}
         max={max}
         value={inputValue}
